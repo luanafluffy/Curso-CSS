@@ -6,7 +6,97 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* * {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        .tag {
+            color: #ff0;
+            background-color: #f77;
+        }
+        #aprovados {
+            color: #ff0;
+            background-color: #f77;
+        } 
+        #aninhado > div {
+            color: #ff0;
+            background-color: #f77;
+        } 
+        #aninhado > section {
+            color: #ff0;
+            background-color: #f77;
+        } //ESSE NÃO FUNCIONA
+        #aninhado section {
+            color: #ff0;
+            background-color: #f77;
+        }
+        p + ul {
+            color: #ff0;
+            background-color: #f77;
+        }
+        p + ol { //não são vizinhos
+            color: #ff0;
+            background-color: #f77;
+        }
+        p ~ ul {
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        //atributos personalizados
+        [feira] {
+            color: #ff0;
+            background-color: #f77;
+        }
+        [feira=casa] {
+            color: #ff0;
+            background-color: #f77;
+        }
+        [feira=escritorio] { //não funciona pois tem dois valores
+            color: #ff0;
+            background-color: #f77;
+        }
+        [feira~=escritorio] {
+            color: #ff0;
+            background-color: #f77;
+        }
+        [feira*=sa] { //Tem contido nos valores as letras "sa"?
+            color: #ff0;
+            background-color: #f77;
+        }
+
+        // Envolvem filhos
+        span:nth-child(1) { //span que é o Primeiro filho de alguém 
+            color: #ff0;
+            background-color: #f77;
+        }
+        section > :nth-child(odd) { // Selecione os impares
+            color: #ff0;
+            background-color: #f77;
+        }
+        section > :nth-child(even) { //os pares
+            color: #ff0;
+            background-color: #f77;
+        }
+        section > :nth-child(1) {  //o primeiro
+            color: #ff0;
+            background-color: #f77;
+        }
+        section > :nth-child(odd), ul, p { //lugares distintos
+            color: #ff0;
+            background-color: #f77;
+        }
+        section > :nth-child(odd) label { 
+            color: #ff0;
+            background-color: #f77;
+        }
+        section > span:nth-of-type(2) { //o segundo elemento do tipo span
+            color: #ff0;
+            background-color: #f77;
+        }
+        */
+        
     </style>
 </head>
 
@@ -29,7 +119,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>
